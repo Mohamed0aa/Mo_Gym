@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mo_Api_Talabat_Controllers\Mo_Api_Talabat_Controllers.csproj" />
+    <ProjectReference Include="..\Mo_Talabat_Application\Mo_Talabat_Core_Application.csproj" />
+    <ProjectReference Include="..\Mo_Talabat_Infrastructure_presistence\Mo_Talabat_Infrastructure_presistence.csproj" />
+  </ItemGroup>
+
+</Project>
